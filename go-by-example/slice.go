@@ -66,4 +66,36 @@ func main() {
 		}
 	}
 	fmt.Println("2d:", twoD)
+
+	/**
+	make(슬라이스 타입, 슬라이스 길이, 슬라이스 용량)
+	*/
+	slice := make([]int, 5, 10)
+	fmt.Println("slice:", slice)
+	fmt.Println("len:", len(slice))
+	fmt.Println("cap:", cap(slice))
+	for i := 0; i < 5; i++ {
+		slice[i] = i
+	}
+	fmt.Println("slice:", slice)
+
+	slice = make([]int, 0, 5)
+	for i := 0; i < 11; i++ {
+		slice = append(slice, i)
+		fmt.Println(cap(slice), len(slice), slice)
+	}
+
+	/**
+	[1/5] 	5 1 [0]
+	[2/5]	5 2 [0 1]
+	[3/5]	5 3 [0 1 2]
+	[4/5]	5 4 [0 1 2 3]
+	[5/5]	5 5 [0 1 2 3 4]
+	[6/10]	10 6 [0 1 2 3 4 5]  >> capacity 두배로 증가
+	[7/10]	10 7 [0 1 2 3 4 5 6]
+	[8/10]	10 8 [0 1 2 3 4 5 6 7]
+	[9/10]	10 9 [0 1 2 3 4 5 6 7 8]
+	[10/10]	10 10 [0 1 2 3 4 5 6 7 8 9]
+	[11/20]	20 11 [0 1 2 3 4 5 6 7 8 9 10] >> capacity 두배로 증가
+	*/
 }

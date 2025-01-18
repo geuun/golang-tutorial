@@ -10,11 +10,18 @@ type person struct {
 func newPerson(name string) *person {
 	p := person{name: name}
 	p.age = 30
+
+	// return pointer to the struct
 	return &p
 }
 
 func main() {
-	fmt.Println(person{"Geun", 31})
+	fmt.Println(person{"geun", 30})
+	fmt.Println(person{name: "geun", age: 30})
+	fmt.Println(person{age: 30, name: "geun"})
+	fmt.Println(person{name: "geun"})
+	fmt.Println(&person{name: "geun", age: 30}) // pointer
+	fmt.Println(newPerson("geun"))
 
 	s := person{name: "geun", age: 30}
 	fmt.Println(s.name)

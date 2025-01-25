@@ -1,11 +1,11 @@
-package main
+package _slice
 
 import (
 	"fmt"
 	"slices"
 )
 
-func main() {
+func Main() {
 	/**
 	Slice는 동적 타입의 배열
 	컴파일 시점에 배열의 크기가 정해진다.

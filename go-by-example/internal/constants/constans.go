@@ -1,13 +1,13 @@
-package main
+package _constants
 
 import (
 	"fmt"
 	"math"
 )
 
-const s string = "constant"
+const s string = "constants"
 
-func main() {
+func Main() {
 	fmt.Println("s = ", s)
 
 	const n = 500000000

@@ -1,8 +1,8 @@
-package main
+package _for
 
 import "fmt"
 
-func main() {
+func Main() {
 
 	i := 1
 	for i <= 3 {

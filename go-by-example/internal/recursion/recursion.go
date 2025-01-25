@@ -1,4 +1,4 @@
-package main
+package _recursion
 
 import "fmt"
 
@@ -11,7 +11,7 @@ func fact(n int) int {
 	return n * fact(n-1)
 }
 
-func main() {
+func Main() {
 	fmt.Println(fact(7))
 
 	// 익명함수

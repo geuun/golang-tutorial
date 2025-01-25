@@ -1,4 +1,4 @@
-package main
+package _enums
 
 import "fmt"
 
@@ -22,14 +22,6 @@ func (ss ServerState) String() string {
 	return stateName[ss]
 }
 
-func main() {
-	ns := transition(StateIdle)
-	fmt.Println(ns)
-
-	ns2 := transition(ns)
-	fmt.Println(ns2)
-}
-
 func transition(ss ServerState) ServerState {
 	switch ss {
 	case StateIdle:
@@ -41,4 +33,12 @@ func transition(ss ServerState) ServerState {
 	default:
 		panic(fmt.Errorf("unknown state: %s", ss))
 	}
+}
+
+func Main() {
+	ns := transition(StateIdle)
+	fmt.Println(ns)
+
+	ns2 := transition(ns)
+	fmt.Println(ns2)
 }

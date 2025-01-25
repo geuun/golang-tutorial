@@ -1,4 +1,4 @@
-package main
+package _struct
 
 import "fmt"
 
@@ -15,7 +15,7 @@ func newPerson(name string) *person {
 	return &p
 }
 
-func main() {
+func Main() {
 	fmt.Println(person{"geun", 30})
 	fmt.Println(person{name: "geun", age: 30})
 	fmt.Println(person{age: 30, name: "geun"})

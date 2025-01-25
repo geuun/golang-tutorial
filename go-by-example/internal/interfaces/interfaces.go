@@ -1,4 +1,4 @@
-package main
+package _interfaces
 
 import (
 	"fmt"
@@ -43,7 +43,7 @@ func detectCircle(g geometry) {
 	}
 }
 
-func main() {
+func Main() {
 	r := rect1{width: 3, height: 4}
 	c := circle1{radius: 5}
 

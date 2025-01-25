@@ -1,11 +1,11 @@
-package main
+package _maps
 
 import (
 	"fmt"
 	"maps"
 )
 
-func main() {
+func Main() {
 	m := make(map[string]int)
 
 	m["k1"] = 7

@@ -1,8 +1,8 @@
-package main
+package _range_over_built_in_types
 
 import "fmt"
 
-func main() {
+func Main() {
 	nums := []int{2, 3, 4}
 	sum := 0
 	for _, num := range nums {

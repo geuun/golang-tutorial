@@ -1,4 +1,4 @@
-package main
+package _multiple_return_values
 
 import "fmt"
 
@@ -6,7 +6,7 @@ func foo() (int, int) {
 	return 3, 7
 }
 
-func main() {
+func Main() {
 	a, b := foo()
 	fmt.Println(a)
 	fmt.Println(b)

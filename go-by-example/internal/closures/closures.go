@@ -1,4 +1,4 @@
-package main
+package _closures
 
 import "fmt"
 
@@ -10,7 +10,7 @@ func intSeq() func() int {
 	}
 }
 
-func main() {
+func Main() {
 	nextInt := intSeq()
 
 	fmt.Println(nextInt())

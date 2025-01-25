@@ -1,8 +1,8 @@
-package main
+package _array
 
 import "fmt"
 
-func main() {
+func Main() {
 	var a [5]int
 	fmt.Println("emp", a)
 

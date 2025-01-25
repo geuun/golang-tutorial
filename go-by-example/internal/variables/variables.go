@@ -1,8 +1,8 @@
-package main
+package _variables
 
 import "fmt"
 
-func main() {
+func Main() {
 	var a = "initial"
 	fmt.Println(a)
 

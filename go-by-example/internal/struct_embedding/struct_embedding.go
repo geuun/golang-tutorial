@@ -1,4 +1,4 @@
-package struct_embedding
+package _struct_embedding
 
 import "fmt"
 

@@ -18,6 +18,7 @@ import (
 	"github.com/geuun/go_by_example/internal/recursion"
 	"github.com/geuun/go_by_example/internal/slice"
 	"github.com/geuun/go_by_example/internal/struct"
+	"github.com/geuun/go_by_example/internal/struct_embedding"
 	"github.com/geuun/go_by_example/internal/switch"
 	"github.com/geuun/go_by_example/internal/values"
 	"github.com/geuun/go_by_example/internal/variables"
@@ -47,4 +48,5 @@ func main() {
 	_methods.Main()
 	_interfaces.Main()
 	_enums.Main()
+	_struct_embedding.Main()
 }

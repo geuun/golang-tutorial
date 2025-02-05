@@ -15,6 +15,17 @@ type container struct {
 	str string
 }
 
+type person struct {
+	Name string
+	Age  int
+}
+
+type employee struct {
+	person  // struct embedding
+	Company string
+	Salary  float64
+}
+
 func Main() {
 	co := container{
 		base: base{
@@ -35,4 +46,20 @@ func Main() {
 
 	var d describer = co
 	fmt.Println("describer:", d.describe())
+
+	emp := employee{
+		person: person{
+			Name: "geun",
+			Age:  29,
+		},
+		Company: "geuuuuuun inc",
+		Salary:  9999999999999999,
+	}
+
+	// Access fields from person struct
+	fmt.Println("Name:", emp.Name) // person.Name directly accessible
+	fmt.Println("Age:", emp.Age)   // person.Age directly accessible
+
+	fmt.Println(emp.person.Name)
+	fmt.Println(emp.person.Age)
 }
